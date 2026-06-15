@@ -8,7 +8,7 @@ Prose style rules for [Vale](https://vale.sh) covering German, English, and seve
 
 | Package | Language | Status |
 |---|---|---|
-| `Foliantica-DE` | German (Deutsch) | ✅ Complete |
+| `Foliantica-DE` | German (Deutsch) | ✅ Complete (10 rules) |
 | `Foliantica-EN` | English | ✅ Complete |
 | `Foliantica-ES` | Spanish (Español) | 🚧 Work in progress |
 | `Foliantica-FR` | French (Français) | 🔜 Planned |
@@ -82,6 +82,9 @@ Flags inflated prepositional phrases from *Amtsdeutsch* (*im Hinblick auf* → *
 
 ### ReflexiveVerbs *(substitution, DE only)*
 Flags bloated reflexive constructions that can be replaced with a simpler verb (*befindet sich* → *ist*, *erweist sich als* → *ist*, *vollzieht sich* → *geschieht*). Based on Wolf Schneider's and Ludwig Reiners's critiques of *aufgeblähte Verben*.
+
+### Klischees *(existence, DE only)*
+Flags worn-out idioms, overused metaphors, and journalistic filler that signal lazy writing. Four categories: everyday idioms (*am Ende des Tages*, *ein Stück weit*, *ins Boot holen*, *in trockene Tücher bringen*); sports metaphors used outside sport (*am Ball bleiben*, *auf der Zielgeraden*, *ins eigene Tor schießen*); political boilerplate (*kein Denkverbot*, *konstruktiver Dialog*, *breiter Konsens*); journalistic clichés (*wie aus dem Nichts*, *totales Chaos*, *historischer Moment*, *neues Kapitel aufschlagen*). Based on Wolf Schneider's and Ludwig Reiners's catalogues of *abgedroschene Wendungen*.
 
 ---
 

@@ -6,18 +6,18 @@ Prose style rules for [Vale](https://vale.sh) covering German, English, and seve
 
 ## Available packages
 
-| Package | Language | Rules |
+| Package | Language | Status |
 |---|---|---|
-| `Foliantica-DE` | German (Deutsch) | WeaselWords, Redundancy, Passive, NominalStyle, WordyPhrases, ReflexiveVerbs |
-| `Foliantica-EN` | English | Redundancy |
-| `Foliantica-ES` | Spanish (Español) | WeaselWords, Redundancy, Passive |
-| `Foliantica-FR` | French (Français) | WeaselWords, Redundancy, Passive |
-| `Foliantica-PT` | Portuguese (Português) | WeaselWords, Redundancy, Passive |
-| `Foliantica-SV` | Swedish (Svenska) | WeaselWords, Redundancy, Passive |
-| `Foliantica-DA` | Danish (Dansk) | WeaselWords, Redundancy, Passive |
-| `Foliantica-NO` | Norwegian (Norsk) | WeaselWords, Redundancy, Passive |
+| `Foliantica-DE` | German (Deutsch) | ✅ Complete |
+| `Foliantica-ES` | Spanish (Español) | 🚧 Work in progress |
+| `Foliantica-FR` | French (Français) | 🔜 Planned |
+| `Foliantica-PT` | Portuguese (Português) | 🔜 Planned |
+| `Foliantica-IT` | Italian (Italiano) | 🔜 Planned |
+| `Foliantica-SV` | Swedish (Svenska) | 🔜 Planned |
+| `Foliantica-DA` | Danish (Dansk) | 🔜 Planned |
+| `Foliantica-NO` | Norwegian (Norsk) | 🔜 Planned |
 
-The German package is the most comprehensive. Other languages contain starter rules; contributions are welcome.
+The German package is complete with 9 rule files. Other languages are being developed in order; contributions are welcome.
 
 ---
 

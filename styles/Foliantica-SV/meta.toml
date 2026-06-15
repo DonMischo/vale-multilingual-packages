@@ -1,5 +1,7 @@
-﻿name = "Foliantica-SV"
-description = "sv prose style rules"
+name = "Foliantica-SV"
+description = "Swedish prose style rules — weasel words, redundancy, passive voice, nominal style, wordy phrases, anglicisms, common errors, buzzwords"
 author = "DonMischo"
 source = "https://github.com/DonMischo/vale-multilingual"
+bugs = "https://github.com/DonMischo/vale-multilingual/issues"
 license = "MIT"
+tags = ["Swedish", "Svenska", "SV", "style", "prose", "linter"]

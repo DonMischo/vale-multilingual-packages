@@ -10,15 +10,15 @@ Prose style rules for [Vale](https://vale.sh) covering German, English, and seve
 |---|---|---|
 | `Foliantica-DE` | German (Deutsch) | ✅ Complete (10 rules) |
 | `Foliantica-EN` | English | ✅ Complete |
-| `Foliantica-ES` | Spanish (Español) | 🚧 Work in progress |
-| `Foliantica-FR` | French (Français) | 🚧 Work in progress |
-| `Foliantica-PT` | Portuguese (Português) | 🚧 Work in progress |
-| `Foliantica-IT` | Italian (Italiano) | 🚧 Work in progress |
-| `Foliantica-SV` | Swedish (Svenska) | 🔜 Planned |
-| `Foliantica-DA` | Danish (Dansk) | 🔜 Planned |
-| `Foliantica-NO` | Norwegian (Norsk) | 🔜 Planned |
+| `Foliantica-ES` | Spanish (Español) | ✅ Complete |
+| `Foliantica-FR` | French (Français) | ✅ Complete |
+| `Foliantica-PT` | Portuguese (Português) | ✅ Complete |
+| `Foliantica-IT` | Italian (Italiano) | ✅ Complete |
+| `Foliantica-SV` | Swedish (Svenska) | ✅ Complete |
+| `Foliantica-DA` | Danish (Dansk) | ✅ Complete |
+| `Foliantica-NO` | Norwegian (Norsk) | ✅ Complete |
 
-German and English are complete. ES, FR, PT, and IT are actively being expanded; Nordic languages are next.
+All packages are complete with 8 rules each. Contributions to expand coverage are welcome.
 
 > **Note on English:** `Foliantica-EN` focuses on gaps not covered by the popular [write-good](https://github.com/errata-ai/write-good) and [proselint](https://github.com/errata-ai/proselint) packages — specifically pleonasm/redundancy detection and nominalization. Use it alongside those packages for full coverage.
 
@@ -124,9 +124,77 @@ All rules are derived from the following authoritative style guides. All credit 
 | **UK Government Digital Service** | Content Design Guide | ongoing | NominalStyle |
 | **Wikipedia** | [List of English pleonasms](https://en.wikipedia.org/wiki/Pleonasm) | ongoing | Redundancy |
 
-### Other languages
+### Spanish (Foliantica-ES)
 
-Starter rules for ES, FR, PT, SV, DA, NO are original compilations drawing on common style guidance for each language. Contributions to expand these are very welcome.
+| Author / Body | Work | Year | Relevant rules |
+|---|---|---|---|
+| **Real Academia Española** | *Diccionario panhispánico de dudas* | 2005 | Redundancy, ErroresComunes |
+| **Real Academia Española** | *Ortografía de la lengua española* | 2010 | Redundancy |
+| **Fundéu** | Style recommendations (fundeu.es) | ongoing | WeaselWords, WordyPhrases |
+| **Manuel Seco** | *Diccionario de dudas y dificultades de la lengua española* (Espasa, 10th ed.) | 1998 | ErroresComunes |
+| **Gobierno de España** | *Manual de estilo del lenguaje administrativo* (MAP) | 1990 | WordyPhrases, Passive |
+| **Wikipedia** | [Pleonasmo (es)](https://es.wikipedia.org/wiki/Pleonasmo) | ongoing | Redundancy |
+
+### French (Foliantica-FR)
+
+| Author / Body | Work | Year | Relevant rules |
+|---|---|---|---|
+| **Académie française** | *Dictionnaire de l'Académie française* (9th ed.) | ongoing | Redundancy, FauxAmis |
+| **Maurice Grevisse & André Goosse** | *Le bon usage* (De Boeck, 16th ed.) | 2016 | NominalStyle, WordyPhrases |
+| **Office québécois de la langue française** | *Le grand dictionnaire terminologique* | ongoing | Anglicismes |
+| **Michèle Lenoble-Pinson** | *Anglicismes et substituts français* (De Boeck) | 1991 | Anglicismes |
+| **Gouvernement du Québec / OQLF** | *Guide du rédacteur* | 2011 | WordyPhrases, Passive |
+| **Wikipedia** | [Pléonasme (fr)](https://fr.wikipedia.org/wiki/Pl%C3%A9onasme) | ongoing | Redundancy |
+
+### Portuguese (Foliantica-PT)
+
+| Author / Body | Work | Year | Relevant rules |
+|---|---|---|---|
+| **Secretaria de Comunicação Social (SECOM)** | *Manual de Redação da Presidência da República* (Brazil, 3rd ed.) | 2018 | WordyPhrases, Passive |
+| **Pasquale Cipro Neto & Ulisses Infante** | *Gramática da língua portuguesa* (Scipione) | 2008 | NominalStyle, Redundancy |
+| **Celso Cunha & Lindley Cintra** | *Nova Gramática do Português Contemporâneo* (Fundação Calouste Gulbenkian) | 2014 | NominalStyle |
+| **Cândido de Figueiredo** | *Dicionário da língua portuguesa* | ongoing | FalsosAmigos |
+| **Wikipedia** | [Estrangeirismo (pt)](https://pt.wikipedia.org/wiki/Estrangeirismo) | ongoing | Estrangeirismos |
+| **Wikipedia** | [Pleonasmo (pt)](https://pt.wikipedia.org/wiki/Pleonasmo) | ongoing | Redundancy |
+
+### Italian (Foliantica-IT)
+
+| Author / Body | Work | Year | Relevant rules |
+|---|---|---|---|
+| **Luca Serianni** | *Grammatica italiana* (UTET) | 1989 | NominalStyle, Redundancy |
+| **Accademia della Crusca** | Linguistic guidance (accademiadellacrusca.it) | ongoing | FalsiAmici, WeaselWords |
+| **Presidenza del Consiglio dei Ministri** | *Manuale di stile* | 1997 | WordyPhrases, Passive |
+| **Bice Mortara Garavelli** | *Manuale di retorica* (Bompiani) | 1988 | Redundancy |
+| **Wikipedia** | [Forestierismo (it)](https://it.wikipedia.org/wiki/Forestierismo) | ongoing | Anglicismi |
+| **Wikipedia** | [Pleonasmo (it)](https://it.wikipedia.org/wiki/Pleonasmo) | ongoing | Redundancy |
+
+### Swedish (Foliantica-SV)
+
+| Author / Body | Work | Year | Relevant rules |
+|---|---|---|---|
+| **Språkrådet** | *Svenska skrivregler* (Liber, 4th ed.) | 2017 | WordyPhrases, Passive, Redundancy |
+| **Språkrådet** | *Myndigheternas skrivregler* (8th ed.) | 2014 | WordyPhrases, WeaselWords |
+| **Svenska Akademien** | *Svenska Akademiens ordlista* (SAOL, 14th ed.) | 2015 | SprakFel |
+| **Erik Wellander** | *Riktig svenska* (Esselte, 4th ed.) | 1973 | NominalStyle, Redundancy |
+| **Wikipedia** | [Pleonasm (sv)](https://sv.wikipedia.org/wiki/Pleonasm) | ongoing | Redundancy |
+
+### Danish (Foliantica-DA)
+
+| Author / Body | Work | Year | Relevant rules |
+|---|---|---|---|
+| **Dansk Sprognævn** | *Retskrivningsordbogen* (4th ed.) | 2012 | SprogFejl |
+| **Dansk Sprognævn** | Klarsprog recommendations (dsn.dk) | ongoing | WordyPhrases, WeaselWords, Passive |
+| **Peter Becker-Christensen** | *Politikens Nudansk Ordbog* (20th ed.) | 2010 | Redundancy |
+| **Wikipedia** | [Pleonasme (da)](https://da.wikipedia.org/wiki/Pleonasme) | ongoing | Redundancy |
+
+### Norwegian (Foliantica-NO)
+
+| Author / Body | Work | Year | Relevant rules |
+|---|---|---|---|
+| **Språkrådet** | *Bokmålsordboka / Nynorskordboka* | ongoing | SprakFeil |
+| **Språkrådet** | Klarspråk guidelines (sprakradet.no/klarsprak) | ongoing | WordyPhrases, WeaselWords, Passive |
+| **Erik Egeberg** | *Norsk stilistikk* (Universitetsforlaget) | 2003 | NominalStyle, Redundancy |
+| **Wikipedia** | [Pleonasme (no)](https://no.wikipedia.org/wiki/Pleonasme) | ongoing | Redundancy |
 
 ---
 

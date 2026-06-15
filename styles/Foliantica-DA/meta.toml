@@ -1,5 +1,7 @@
-﻿name = "Foliantica-DA"
-description = "da prose style rules"
+name = "Foliantica-DA"
+description = "Danish prose style rules — weasel words, redundancy, passive voice, nominal style, wordy phrases, anglicisms, common errors, buzzwords"
 author = "DonMischo"
 source = "https://github.com/DonMischo/vale-multilingual"
+bugs = "https://github.com/DonMischo/vale-multilingual/issues"
 license = "MIT"
+tags = ["Danish", "Dansk", "DA", "style", "prose", "linter"]

@@ -1,5 +1,7 @@
-﻿name = "Foliantica-PT"
-description = "pt prose style rules"
+name = "Foliantica-PT"
+description = "Portuguese prose style rules — weasel words, redundancy, passive voice, nominal style, wordy phrases, loanwords, false friends, buzzwords"
 author = "DonMischo"
 source = "https://github.com/DonMischo/vale-multilingual"
+bugs = "https://github.com/DonMischo/vale-multilingual/issues"
 license = "MIT"
+tags = ["Portuguese", "Português", "PT", "style", "prose", "linter"]

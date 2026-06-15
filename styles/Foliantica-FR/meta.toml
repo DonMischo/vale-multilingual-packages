@@ -1,5 +1,7 @@
-﻿name = "Foliantica-FR"
-description = "fr prose style rules"
+name = "Foliantica-FR"
+description = "French prose style rules — weasel words, redundancy, passive voice, nominal style, wordy phrases, anglicisms, false friends, buzzwords"
 author = "DonMischo"
 source = "https://github.com/DonMischo/vale-multilingual"
+bugs = "https://github.com/DonMischo/vale-multilingual/issues"
 license = "MIT"
+tags = ["French", "Français", "FR", "style", "prose", "linter"]

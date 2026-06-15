@@ -1,5 +1,7 @@
-﻿name = "Foliantica-ES"
-description = "es prose style rules"
+name = "Foliantica-ES"
+description = "Spanish prose style rules — weasel words, redundancy, passive voice, nominal style, wordy phrases, anglicisms, common errors, buzzwords"
 author = "DonMischo"
 source = "https://github.com/DonMischo/vale-multilingual"
+bugs = "https://github.com/DonMischo/vale-multilingual/issues"
 license = "MIT"
+tags = ["Spanish", "Español", "ES", "style", "prose", "linter"]

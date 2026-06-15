@@ -11,14 +11,14 @@ Prose style rules for [Vale](https://vale.sh) covering German, English, and seve
 | `Foliantica-DE` | German (Deutsch) | ✅ Complete (10 rules) |
 | `Foliantica-EN` | English | ✅ Complete |
 | `Foliantica-ES` | Spanish (Español) | 🚧 Work in progress |
-| `Foliantica-FR` | French (Français) | 🔜 Planned |
-| `Foliantica-PT` | Portuguese (Português) | 🔜 Planned |
-| `Foliantica-IT` | Italian (Italiano) | 🔜 Planned |
+| `Foliantica-FR` | French (Français) | 🚧 Work in progress |
+| `Foliantica-PT` | Portuguese (Português) | 🚧 Work in progress |
+| `Foliantica-IT` | Italian (Italiano) | 🚧 Work in progress |
 | `Foliantica-SV` | Swedish (Svenska) | 🔜 Planned |
 | `Foliantica-DA` | Danish (Dansk) | 🔜 Planned |
 | `Foliantica-NO` | Norwegian (Norsk) | 🔜 Planned |
 
-The German and English packages are complete. Other languages are being developed in order; contributions are welcome.
+German and English are complete. ES, FR, PT, and IT are actively being expanded; Nordic languages are next.
 
 > **Note on English:** `Foliantica-EN` focuses on gaps not covered by the popular [write-good](https://github.com/errata-ai/write-good) and [proselint](https://github.com/errata-ai/proselint) packages — specifically pleonasm/redundancy detection and nominalization. Use it alongside those packages for full coverage.
 
@@ -91,6 +91,8 @@ Flags worn-out idioms, overused metaphors, and journalistic filler that signal l
 ## Attribution & sources
 
 All rules are derived from the following authoritative style guides. All credit for the underlying guidance belongs to the original authors.
+
+> **Note on AI-assisted content:** The rule entries in these packages were generated with the help of a large language model (Claude by Anthropic), working from the cited sources. Every source listed below is real and the underlying guidance is genuine — but individual entries have not been manually verified against the original texts one by one. If you spot an error or a false positive, please [open an issue](https://github.com/DonMischo/vale-multilingual/issues).
 
 ### German (Foliantica-DE)
 

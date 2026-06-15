@@ -1,0 +1,7 @@
+name = "Foliantica-IT"
+description = "Italian prose style rules — weasel words, redundancy, passive voice, nominal style, wordy phrases, false friends, anglicisms"
+author = "DonMischo"
+source = "https://github.com/DonMischo/vale-multilingual"
+bugs = "https://github.com/DonMischo/vale-multilingual/issues"
+license = "MIT"
+tags = ["Italian", "IT", "style", "prose", "linter"]

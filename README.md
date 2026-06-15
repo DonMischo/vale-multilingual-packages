@@ -9,6 +9,7 @@ Prose style rules for [Vale](https://vale.sh) covering German, English, and seve
 | Package | Language | Status |
 |---|---|---|
 | `Foliantica-DE` | German (Deutsch) | ✅ Complete |
+| `Foliantica-EN` | English | ✅ Complete |
 | `Foliantica-ES` | Spanish (Español) | 🚧 Work in progress |
 | `Foliantica-FR` | French (Français) | 🔜 Planned |
 | `Foliantica-PT` | Portuguese (Português) | 🔜 Planned |
@@ -17,7 +18,9 @@ Prose style rules for [Vale](https://vale.sh) covering German, English, and seve
 | `Foliantica-DA` | Danish (Dansk) | 🔜 Planned |
 | `Foliantica-NO` | Norwegian (Norsk) | 🔜 Planned |
 
-The German package is complete with 9 rule files. Other languages are being developed in order; contributions are welcome.
+The German and English packages are complete. Other languages are being developed in order; contributions are welcome.
+
+> **Note on English:** `Foliantica-EN` focuses on gaps not covered by the popular [write-good](https://github.com/errata-ai/write-good) and [proselint](https://github.com/errata-ai/proselint) packages — specifically pleonasm/redundancy detection and nominalization. Use it alongside those packages for full coverage.
 
 ---
 
@@ -66,13 +69,13 @@ Vale.Spelling = NO
 Flags vague or filler words that weaken prose — hedging adverbs (*eigentlich*, *irgendwie*, *sehr*), epistemic hedges (*anscheinend*, *vermeintlich*), bureaucratic filler (*diesbezüglich*, *dahingehend*), vague time expressions (*zeitnah*, *in absehbarer Zeit*), and relativising phrases (*sogenannte*, *im wahrsten Sinne des Wortes*).
 
 ### Redundancy *(substitution)*
-Catches pleonasms — phrases where the adjective repeats information already in the noun (*tote Leiche*, *weißer Schimmel*, *neues Novum*, *erste Premiere*), directional redundancies (*aufwärts steigen*, *wieder zurück*), RAS-syndrome acronyms (*PIN-Nummer*, *ADAC-Club*, *API-Schnittstelle*), and temporal redundancies (*vergangene Geschichte*, *künftige Zukunft*).
+Catches pleonasms — phrases where a modifier repeats information already in the noun. **German (DE):** adjective-in-noun tautologies (*tote Leiche*, *weißer Schimmel*, *neues Novum*), directional redundancies (*aufwärts steigen*, *wieder zurück*), RAS-syndrome acronyms (*PIN-Nummer*, *ADAC-Club*, *API-Schnittstelle*), and temporal redundancies (*vergangene Geschichte*, *künftige Zukunft*). **English (EN):** (*end result*, *unexpected surprise*, *past history*, *revert back*, *cooperate together*, *very unique*, *PIN number*, *ATM machine*).
 
 ### Passive *(existence)*  
 Flags passive constructions (*wurde*, *wurden*, *worden*, sein+zu+Infinitiv) as suggestions to prefer active voice.
 
-### NominalStyle *(substitution, DE only)*
-Flags *Funktionsverbgefüge* — stretched noun-verb constructions common in formal German (*eine Entscheidung treffen* → *entscheiden*, *zur Kenntnis nehmen* → *beachten*, *erfolgt eine Prüfung* → *wird geprüft*). Based on Wolf Schneider's and Ludwig Reiners's catalogues of *Streckformen*.
+### NominalStyle *(substitution)*
+Flags stretched noun-verb constructions — the "zombie noun" pattern described by Joseph M. Williams and Helen Sword. **German (DE):** *Funktionsverbgefüge* (*eine Entscheidung treffen* → *entscheiden*, *zur Kenntnis nehmen* → *beachten*). **English (EN):** function verb constructions (*make a decision* → *decide*, *conduct an analysis* → *analyze*, *be in possession of* → *possess*, *provide clarification* → *clarify*).
 
 ### WordyPhrases *(substitution, DE only)*
 Flags inflated prepositional phrases from *Amtsdeutsch* (*im Hinblick auf* → *für*, *aufgrund der Tatsache dass* → *weil*, *in hohem Maße* → *sehr*). Based on the Bundesverwaltungsamt plain-language guide.
@@ -102,6 +105,19 @@ All rules are derived from the following authoritative style guides. All credit 
 | **Netzwerk Leichte Sprache** | *Regeln für Leichte Sprache* | 2013 | WeaselWords, WordyPhrases |
 | **Wikipedia** | [Liste der Pleonasmen](https://de.wikipedia.org/wiki/Pleonasmus) | ongoing | Redundancy |
 | **Wikipedia** | [RAS-Syndrom](https://de.wikipedia.org/wiki/RAS-Syndrom) | ongoing | Redundancy (acronyms) |
+
+### English (Foliantica-EN)
+
+| Author | Work | Year | Relevant rules |
+|---|---|---|---|
+| **William Strunk & E.B. White** | *The Elements of Style* (Macmillan) | 1959 | Redundancy |
+| **William Zinsser** | *On Writing Well* (HarperCollins) | 1976 | Redundancy, NominalStyle |
+| **Joseph M. Williams** | *Style: Lessons in Clarity and Grace* (Pearson) | 2014 | NominalStyle |
+| **Helen Sword** | "Zombie Nouns" (New York Times Opinionator) | 2012 | NominalStyle |
+| **Bryan A. Garner** | *Garner's Modern English Usage* (OUP, 4th ed.) | 2016 | Redundancy, NominalStyle |
+| **Plain English Campaign** | *The A to Z of Alternative Words* | 2000 | NominalStyle |
+| **UK Government Digital Service** | Content Design Guide | ongoing | NominalStyle |
+| **Wikipedia** | [List of English pleonasms](https://en.wikipedia.org/wiki/Pleonasm) | ongoing | Redundancy |
 
 ### Other languages
 

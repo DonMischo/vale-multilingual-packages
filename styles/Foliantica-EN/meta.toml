@@ -1,5 +1,7 @@
 ﻿name = "Foliantica-EN"
-description = "en prose style rules"
+description = "English prose style rules — redundancy/pleonasms, nominalization (function verb constructions)"
 author = "DonMischo"
 source = "https://github.com/DonMischo/vale-multilingual"
+bugs = "https://github.com/DonMischo/vale-multilingual/issues"
 license = "MIT"
+tags = ["English", "EN", "style", "prose", "linter"]

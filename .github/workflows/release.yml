@@ -1,0 +1,49 @@
+name: Release Vale packages
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create per-language ZIP packages
+        run: |
+          mkdir -p dist
+          for pkg_dir in styles/Foliantica-*/; do
+            pkg=$(basename "$pkg_dir")
+            echo "Packaging $pkg ..."
+            (cd "$pkg_dir" && zip -r "../../dist/${pkg}.zip" .)
+          done
+          ls -lh dist/
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
+          generate_release_notes: true
+          body: |
+            ## Vale Multilingual Style Packages
+
+            Install a package by adding it to your `.vale.ini`:
+
+            ```ini
+            StylesPath = styles
+            Packages = https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/Foliantica-DE.zip
+
+            [*.md]
+            BasedOnStyles = Foliantica-DE
+            Vale.Spelling = NO
+            ```
+
+            Then run `vale sync` to download it.
+
+            See the [README](https://github.com/${{ github.repository }}#readme) for all available packages and full usage instructions.

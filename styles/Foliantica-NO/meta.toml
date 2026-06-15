@@ -1,0 +1,5 @@
+﻿name = "Foliantica-NO"
+description = "no prose style rules"
+author = "DonMischo"
+source = "https://github.com/DonMischo/vale-multilingual"
+license = "MIT"

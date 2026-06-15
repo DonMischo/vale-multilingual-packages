@@ -1,0 +1,128 @@
+# Vale Multilingual Style Packages
+
+Prose style rules for [Vale](https://vale.sh) covering German, English, and several other European languages. Installable as Vale packages via `vale sync` — the same way you install [write-good](https://github.com/errata-ai/write-good) or [proselint](https://github.com/errata-ai/proselint).
+
+---
+
+## Available packages
+
+| Package | Language | Rules |
+|---|---|---|
+| `Foliantica-DE` | German (Deutsch) | WeaselWords, Redundancy, Passive, NominalStyle, WordyPhrases |
+| `Foliantica-EN` | English | Redundancy |
+| `Foliantica-ES` | Spanish (Español) | WeaselWords, Redundancy, Passive |
+| `Foliantica-FR` | French (Français) | WeaselWords, Redundancy, Passive |
+| `Foliantica-PT` | Portuguese (Português) | WeaselWords, Redundancy, Passive |
+| `Foliantica-SV` | Swedish (Svenska) | WeaselWords, Redundancy, Passive |
+| `Foliantica-DA` | Danish (Dansk) | WeaselWords, Redundancy, Passive |
+| `Foliantica-NO` | Norwegian (Norsk) | WeaselWords, Redundancy, Passive |
+
+The German package is the most comprehensive. Other languages contain starter rules; contributions are welcome.
+
+---
+
+## Installation
+
+### 1. Add the package URL to your `.vale.ini`
+
+```ini
+StylesPath = styles
+MinAlertLevel = suggestion
+
+# Replace Foliantica-DE with the package for your language
+Packages = https://github.com/DonMischo/vale-multilingual/releases/latest/download/Foliantica-DE.zip
+
+[*.md]
+BasedOnStyles = Foliantica-DE
+Vale.Spelling = NO
+```
+
+### 2. Run `vale sync`
+
+```bash
+vale sync
+```
+
+Vale downloads the ZIP and extracts it into your `StylesPath`. You're done.
+
+### Combining with other packages
+
+```ini
+StylesPath = styles
+Packages = write-good, proselint, https://github.com/DonMischo/vale-multilingual/releases/latest/download/Foliantica-DE.zip
+
+[*.md]
+BasedOnStyles = Vale, write-good, proselint, Foliantica-DE
+Vale.Spelling = NO
+```
+
+> **Note:** `Vale.Spelling = NO` suppresses Vale's built-in English spell checker, which would flag most non-English words as errors.
+
+---
+
+## Rule descriptions
+
+### WeaselWords *(existence)*
+Flags vague or filler words that weaken prose — hedging adverbs (*eigentlich*, *irgendwie*, *sehr*), epistemic hedges (*anscheinend*, *vermeintlich*), bureaucratic filler (*diesbezüglich*, *dahingehend*), vague time expressions (*zeitnah*, *in absehbarer Zeit*), and relativising phrases (*sogenannte*, *im wahrsten Sinne des Wortes*).
+
+### Redundancy *(substitution)*
+Catches pleonasms — phrases where the adjective repeats information already in the noun (*tote Leiche*, *weißer Schimmel*, *neues Novum*, *erste Premiere*), directional redundancies (*aufwärts steigen*, *wieder zurück*), RAS-syndrome acronyms (*PIN-Nummer*, *ADAC-Club*, *API-Schnittstelle*), and temporal redundancies (*vergangene Geschichte*, *künftige Zukunft*).
+
+### Passive *(existence)*  
+Flags passive constructions (*wurde*, *wurden*, *worden*, sein+zu+Infinitiv) as suggestions to prefer active voice.
+
+### NominalStyle *(substitution, DE only)*
+Flags *Funktionsverbgefüge* — stretched noun-verb constructions common in formal German (*eine Entscheidung treffen* → *entscheiden*, *zur Kenntnis nehmen* → *beachten*, *erfolgt eine Prüfung* → *wird geprüft*). Based on Wolf Schneider's and Ludwig Reiners's catalogues of *Streckformen*.
+
+### WordyPhrases *(substitution, DE only)*
+Flags inflated prepositional phrases from *Amtsdeutsch* (*im Hinblick auf* → *für*, *aufgrund der Tatsache dass* → *weil*, *in hohem Maße* → *sehr*). Based on the Bundesverwaltungsamt plain-language guide.
+
+---
+
+## Attribution & sources
+
+All rules are derived from the following authoritative style guides. All credit for the underlying guidance belongs to the original authors.
+
+### German (Foliantica-DE)
+
+| Author | Work | Year | Relevant rules |
+|---|---|---|---|
+| **Wolf Schneider** | *Deutsch fürs Leben* (Rowohlt) | 1994 | WeaselWords, NominalStyle, WordyPhrases |
+| **Wolf Schneider** | *Deutsch! Das Handbuch für attraktives Schreiben* (Rowohlt) | 2005 | WeaselWords, WordyPhrases |
+| **Bastian Sick** | *Der Dativ ist dem Genitiv sein Tod*, Bd. 1–3 (Kiepenheuer & Witsch) | 2004– | Redundancy, WeaselWords |
+| **Bastian Sick** | Zwiebelfisch-Kolumnen (Spiegel Online) | 2003– | Redundancy, WeaselWords |
+| **Ludwig Reiners** | *Stilkunst* (C.H. Beck) | 1944 / rev. 1991 | NominalStyle (Funktionsverbgefüge) |
+| **Bundesverwaltungsamt** | *Leitfaden Bürgernahe Sprache* | 2002 | WordyPhrases, Passive |
+| **Bundesministerium für Justiz** | *Handbuch der Rechtsförmlichkeit* (3. Aufl.) | 2008 | NominalStyle, WordyPhrases |
+| **Duden** | *Richtiges und gutes Deutsch* (Bd. 9) / *Das Stilwörterbuch* (Bd. 2) | 2010 | Redundancy |
+| **Institut für Deutsche Sprache** | Grammis-Datenbank, *Funktionsverbgefüge* | ongoing | NominalStyle |
+| **Netzwerk Leichte Sprache** | *Regeln für Leichte Sprache* | 2013 | WeaselWords, WordyPhrases |
+| **Wikipedia** | [Liste der Pleonasmen](https://de.wikipedia.org/wiki/Pleonasmus) | ongoing | Redundancy |
+| **Wikipedia** | [RAS-Syndrom](https://de.wikipedia.org/wiki/RAS-Syndrom) | ongoing | Redundancy (acronyms) |
+
+### Other languages
+
+Starter rules for ES, FR, PT, SV, DA, NO are original compilations drawing on common style guidance for each language. Contributions to expand these are very welcome.
+
+---
+
+## Using with Foliantica
+
+These packages are the canonical source for the built-in style rules in [Foliantica](https://github.com/DonMischo/foliantica), a writing app for authors. Foliantica injects the appropriate language package at request time based on the project's language setting.
+
+---
+
+## Contributing
+
+1. Fork the repo and edit the YAML files in `styles/Foliantica-XX/`
+2. Keep entries in categorised comment blocks with source attribution
+3. Avoid entries that generate frequent false positives
+4. Open a PR describing the source for new entries
+
+Vale rule format reference: [vale.sh/docs/topics/styles](https://vale.sh/docs/topics/styles/)
+
+---
+
+## License
+
+MIT. Rule *content* is derived from published style guides; all intellectual credit for the underlying guidance belongs to the original authors listed above.

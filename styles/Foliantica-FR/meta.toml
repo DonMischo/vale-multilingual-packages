@@ -1,0 +1,5 @@
+﻿name = "Foliantica-FR"
+description = "fr prose style rules"
+author = "DonMischo"
+source = "https://github.com/DonMischo/vale-multilingual"
+license = "MIT"

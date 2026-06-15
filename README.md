@@ -108,7 +108,7 @@ Starter rules for ES, FR, PT, SV, DA, NO are original compilations drawing on co
 
 ## Using with Foliantica
 
-These packages are the canonical source for the built-in style rules in [Foliantica](https://github.com/DonMischo/foliantica), a writing app for authors. Foliantica injects the appropriate language package at request time based on the project's language setting.
+These packages were created as part of the development of [Foliantica](https://github.com/DonMischo/foliantica), a writing app for authors — and are published here as a standalone resource for anyone who wants to use them with Vale directly. Foliantica injects the appropriate language package at request time based on the project's language setting.
 
 ---
 

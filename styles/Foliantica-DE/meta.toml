@@ -1,5 +1,5 @@
 name = "Foliantica-DE"
-description = "German prose style rules — weasel words, redundancy, passive voice, nominal style, wordy phrases"
+description = "German prose style rules — weasel words, redundancy, passive voice, nominal style, wordy phrases, reflexive verb inflation"
 author = "DonMischo"
 source = "https://github.com/DonMischo/vale-multilingual"
 bugs = "https://github.com/DonMischo/vale-multilingual/issues"

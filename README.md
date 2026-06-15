@@ -8,7 +8,7 @@ Prose style rules for [Vale](https://vale.sh) covering German, English, and seve
 
 | Package | Language | Rules |
 |---|---|---|
-| `Foliantica-DE` | German (Deutsch) | WeaselWords, Redundancy, Passive, NominalStyle, WordyPhrases |
+| `Foliantica-DE` | German (Deutsch) | WeaselWords, Redundancy, Passive, NominalStyle, WordyPhrases, ReflexiveVerbs |
 | `Foliantica-EN` | English | Redundancy |
 | `Foliantica-ES` | Spanish (Español) | WeaselWords, Redundancy, Passive |
 | `Foliantica-FR` | French (Français) | WeaselWords, Redundancy, Passive |
@@ -76,6 +76,9 @@ Flags *Funktionsverbgefüge* — stretched noun-verb constructions common in for
 
 ### WordyPhrases *(substitution, DE only)*
 Flags inflated prepositional phrases from *Amtsdeutsch* (*im Hinblick auf* → *für*, *aufgrund der Tatsache dass* → *weil*, *in hohem Maße* → *sehr*). Based on the Bundesverwaltungsamt plain-language guide.
+
+### ReflexiveVerbs *(substitution, DE only)*
+Flags bloated reflexive constructions that can be replaced with a simpler verb (*befindet sich* → *ist*, *erweist sich als* → *ist*, *vollzieht sich* → *geschieht*). Based on Wolf Schneider's and Ludwig Reiners's critiques of *aufgeblähte Verben*.
 
 ---
 

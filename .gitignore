@@ -1,2 +1,11 @@
 dist/
 *.zip
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local reports / scratch notes
+EVALUATION_REPORT.md
+*_REPORT.md

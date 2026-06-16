@@ -209,7 +209,10 @@ These packages were created as part of the development of [Foliantica](https://g
 1. Fork the repo and edit the YAML files in `styles/Foliantica-XX/`
 2. Keep entries in categorised comment blocks with source attribution
 3. Avoid entries that generate frequent false positives
-4. Open a PR describing the source for new entries
+4. Run `python tests/test_yaml_validity.py` before opening a PR — it checks every
+   file parses, has the required Vale fields, and that `substitution` rules don't
+   contain corrupted swap values (a real bug class found and fixed in this repo)
+5. Open a PR describing the source for new entries
 
 Vale rule format reference: [vale.sh/docs/topics/styles](https://vale.sh/docs/topics/styles/)
 

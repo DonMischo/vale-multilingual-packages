@@ -1,0 +1,89 @@
+# Bronnen / Sources:
+#   - Jan Renkema: "Schrijfwijzer" (4e druk, Boom, 2012) — het Nederlandse stijlhandboek
+#   - Genootschap Onze Taal: taaladvies.net — redactioneel taaladvies
+#   - Nederlandse Taalunie (NTU): taalunie.org
+#   - Van Dale: "Groot woordenboek van de Nederlandse taal" (15e druk, 2015)
+#   - ANS: "Algemene Nederlandse Spraakkunst" (2e druk, 1997 / online 2016): ans.ruhosting.nl
+#   - Henk Pander Maat / Leo Lentz: "Schrijven voor lezers" (Boom, 2010)
+extends: existence
+message: "'%s' is vaag of een opvulwoord — preciezer formuleren?"
+level: warning
+ignorecase: true
+tokens:
+  # --- Verzwakkende intensiverders (Renkema; Pander Maat) ---
+  - \bzeer\b
+  - \bhelemaal\b
+  - \bvolkomen\b
+  - \bvolstrekt\b
+  - \babsoluut\b
+  - \bbepaald\b
+  - \bbeslist\b
+  - \benorm\b
+  - \bongelooflijk\b
+  - \bfantastisch\b
+  - \buitstekend\b
+  - \bverreweg\b
+  - \bveruit\b
+
+  # --- Lege evidentieclaims (Renkema; Genootschap Onze Taal) ---
+  - \bevident\b
+  - \bduidelijk\b
+  - \bklaarblijkelijk\b
+  - \bkennelijk\b
+  - \bonmiskenbaar\b
+  - \bontegenzeggelijk\b
+  - \bvanzelfsprekend\b
+  - \bnatuurlijk\b
+  - \blogischerwijs\b
+  - \bogenschijnlijk\b
+  - \bwelbekend\b
+  - \bhet spreekt vanzelf dat\b
+  - \bhet is duidelijk dat\b
+  - \bhet is evident dat\b
+  - \bzoals bekend\b
+  - \bzoals iedereen weet\b
+  - \bhet is een feit dat\b
+
+  # --- Containerbegrippen / loze woorden (Renkema; Pander Maat) ---
+  - \bzaak\b
+  - \baspect\b
+  - \bdimensie\b
+  - \bproblematiek\b
+  - \bthematiek\b
+  - \bkwestie\b
+  - \bpanorama\b
+
+  # --- Vage kwantificeerders (Renkema; ANS) ---
+  - \bdiverste\b
+  - \bvelerlei\b
+  - \been aantal\b
+  - \been reeks van\b
+  - \been scala aan\b
+  - \been groot aantal\b
+  - \been veelheid van\b
+  - \been breed spectrum van\b
+
+  # --- Epistemische verzachters (Renkema; Genootschap Onze Taal) ---
+  - \bin zekere zin\b
+  - \bop een of andere manier\b
+  - \benigszins\b
+  - \bin zekere mate\b
+  - \bom zo te zeggen\b
+  - \bals het ware\b
+  - \bmin of meer\b
+  - \bzo men wil\b
+
+  # --- Tijdvullers (Renkema; Pander Maat) ---
+  - \bop dit moment\b
+  - \bop het moment\b
+  - \btegenwoordige tijd\b
+  - \bheden ten dage\b
+  - \bthans\b
+  - \bin de huidige tijd\b
+  - \bin onze tijd\b
+  - \bzo spoedig mogelijk\b
+  - \bzo snel mogelijk\b
+  - \bin de nabije toekomst\b
+  - \bop korte termijn\b
+  - \bop middellange termijn\b
+  - \bop lange termijn\b

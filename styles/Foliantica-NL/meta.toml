@@ -1,0 +1,7 @@
+name = "Foliantica-NL"
+description = "Dutch prose style rules — weasel words, redundancy, passive voice, nominal style, wordy phrases, anglicisms, buzzwords, language errors"
+author = "DonMischo"
+source = "https://github.com/DonMischo/vale-multilingual"
+bugs = "https://github.com/DonMischo/vale-multilingual/issues"
+license = "MIT"
+tags = ["Dutch", "NL", "Nederlands", "style", "prose", "linter"]

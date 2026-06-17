@@ -12,8 +12,9 @@ Prose style rules for [Vale](https://vale.sh) covering German, English, and seve
 | `Foliantica-EN` | English | ✅ Complete |
 | `Foliantica-ES` | Spanish (Español) | ✅ Complete |
 | `Foliantica-FR` | French (Français) | ✅ Complete |
-| `Foliantica-PT` | Portuguese (Português) | ✅ Complete |
 | `Foliantica-IT` | Italian (Italiano) | ✅ Complete |
+| `Foliantica-NL` | Dutch (Nederlands) | ✅ Complete (8 rules) |
+| `Foliantica-PT` | Portuguese (Português) | ✅ Complete |
 | `Foliantica-SV` | Swedish (Svenska) | ✅ Complete |
 | `Foliantica-DA` | Danish (Dansk) | ✅ Complete |
 | `Foliantica-NO` | Norwegian (Norsk) | ✅ Complete |
@@ -195,6 +196,19 @@ All rules are derived from the following authoritative style guides. All credit 
 | **Språkrådet** | Klarspråk guidelines (sprakradet.no/klarsprak) | ongoing | WordyPhrases, WeaselWords, Passive |
 | **Erik Egeberg** | *Norsk stilistikk* (Universitetsforlaget) | 2003 | NominalStyle, Redundancy |
 | **Wikipedia** | [Pleonasme (no)](https://no.wikipedia.org/wiki/Pleonasme) | ongoing | Redundancy |
+
+### Dutch (Foliantica-NL)
+
+| Author / Body | Work | Year | Relevant rules |
+|---|---|---|---|
+| **Jan Renkema** | *Schrijfwijzer* (Boom, 4th ed.) | 2012 | All rules |
+| **Henk Pander Maat & Leo Lentz** | *Schrijven voor lezers* (Boom) | 2010 | WeaselWords, NominalStyle, WordyPhrases, Redundancy |
+| **Genootschap Onze Taal** | Taaladvies (taaladvies.net) | ongoing | WeaselWords, Anglicismen, Buzzwords, TaalFouten |
+| **Nederlandse Taalunie (NTU)** | Taaladvies & Schrijfwijzer overheid (taalunie.org) | ongoing | WordyPhrases, Passive, Anglicismen |
+| **ANS — Algemene Nederlandse Spraakkunst** | 2nd ed. / online 2016 (ans.ruhosting.nl) | 1997 | NominalStyle, Passive, Redundancy, TaalFouten |
+| **Van Dale** | *Groot woordenboek van de Nederlandse taal* (15th ed.) | 2015 | Redundancy, Anglicismen, Buzzwords, TaalFouten |
+| **Instituut voor de Nederlandse Taal (INT)** | INT resources (ivdnt.org) | ongoing | Anglicismen |
+| **Wikipedia** | [Pleonasme (nl)](https://nl.wikipedia.org/wiki/Pleonasme) | ongoing | Redundancy |
 
 ---
 
